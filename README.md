@@ -1,2 +1,2 @@
-# Winfo: GitHub (Colaboração de Código)
+# Winfo: GitHub
 Teste para o minicurso github
