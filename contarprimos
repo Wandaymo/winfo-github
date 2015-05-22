@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int i=0,a=0,b,cont=0,t=0,cont2=0;
+       printf("Digite um numero:\n");
+       scanf("%d",&a);
+       printf("Digite outro numero:\n");
+       scanf("%d",&b);
+       if(a==1)
+       {
+           cont=+1;
+       }
+       while(a<=b)
+        {
+       for(i=2;i<a;i++)
+       {
+           if(a%i==0)
+           {   cont=cont+1;
+               break;
+           }
+       }
+       a=a+1;
+       t=t+1;
+       }
+cont2=t-cont;
+printf("primos: %d\n",cont2);
+  }
