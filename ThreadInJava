@@ -1,0 +1,60 @@
+package tresFormasDiferentesDeCriarThreads;
+
+//import javax.swing.JDialog;;
+
+
+
+public class Teste extends Thread  {
+
+	public Teste() {
+		int i = 0;
+		while(i < 1000000000)
+		{
+			try {
+				Thread.sleep(1000);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			System.out.println(i + "ª Thread executando");
+			i++;
+		}
+	}
+
+	
+class SegundaForma implements Runnable{
+	@Override
+	public void run(){
+		int i = 0;
+		while(i < 1000000000){
+			System.out.println("2ª Forma Executando");
+			i++;
+		}
+	}
+}
+	
+	
+
+	public static void main(String[] args) {
+		Teste t1 = new Teste();
+		SegundaForma sf = new SegundaForma();
+		Thread t2 = new Thread(sf);
+		
+		public void run(){
+			int i = 0;
+			while(i < 100000000000){
+				
+			}
+		}
+		
+		
+		t1.start();
+		t2.start();
+		int j = 0;
+		while(j < 1000000000){
+			System.out.println("2ª Forma Executando");
+			j++;
+		}
+
+	}
+
+}
